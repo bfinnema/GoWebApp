@@ -11,6 +11,9 @@ spec:
     spec:
       containers:
       - name: cluster-2
-        image: gcr.io/bfinnema-test/webapp:v2
+        image: gcr.io/bfinnema-test/webapp:v3
+        env:
+        - name: ZEUS_TOKEN
+          value: "8dcccc00"
         ports:
         - containerPort: 8080
